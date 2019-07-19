@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 }
 
+.container {
+	position: absolute;
+	left: 50vw;
+	top: 50vh;
+	transform: translate(-50%, -50%);
+}
+
 .menu {
 	display:inline-block;
 	position: relative;
@@ -11,9 +18,7 @@
 	height:30px;
 	margin: 2px;
 	cursor: pointer;
-	left: 50vw;
-	top: 50vh;
-	transform: translate(-50%, -50%);
+
 }
 
 .menu__bar {
@@ -59,4 +64,43 @@
 }
 
 
+.menu__bar2 {
+	background-color: #293462;
+}
+
+.menu__bar2.menu__bar--bottom {
+	background-color: #f76262;
+}
+
+.menu__bar3 {
+	background-color: #4f3a65;
+}
+
+.menu__bar3.menu__bar--bottom {
+	background-color: #95adbe;
+}
+
+.menu__bar4 {
+	background-color: #525252;
+}
+
+.menu__bar4.menu__bar--bottom {
+	background-color: #ca3e47;
+}
+
+.menu__bar5 {
+	background-color: #fab95b;
+}
+
+.menu__bar5.menu__bar--bottom {
+	background-color: #71a0a5;
+}
+
+.menu__bar6 {
+	background-color: #ffeaa5;
+}
+
+.menu__bar6.menu__bar--bottom {
+	background-color: #40a798;
+}
 
