@@ -97,10 +97,14 @@
 }
 
 .menu__bar6 {
-	background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+	background: linear-gradient(to bottom, orange , yellow, green);
 }
 
+
+.menu__bar6.menu__bar--middle {
+	background: linear-gradient(to bottom, green, cyan, blue);
+}
 .menu__bar6.menu__bar--bottom {
-	background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+	background: linear-gradient(to bottom, blue, violet, purple);
 }
 
