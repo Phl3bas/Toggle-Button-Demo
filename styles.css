@@ -97,10 +97,10 @@
 }
 
 .menu__bar6 {
-	background-color: #ffeaa5;
+	background-color: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
 }
 
 .menu__bar6.menu__bar--bottom {
-	background-color: #40a798;
+	background-color: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
 }
 
