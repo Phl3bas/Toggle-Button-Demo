@@ -1,3 +1,5 @@
+
+/*Menu One Javascript Toggle*/
 const menu1 = document.querySelector('#menu1');
 const topBar1 = document.querySelector('#menu1 .menu__bar--top');
 const midBar1 = document.querySelector('#menu1 .menu__bar--middle');
@@ -9,11 +11,7 @@ menu1.addEventListener('click',()=>{
 	botBar1.classList.toggle('menu__bar--rotateRight');
 });
 
-
-
-
-
-
+/*Menu Two Javascript Toggle*/
 const menu2 = document.querySelector('#menu2');
 const topBar2 = document.querySelector('#menu2 .menu__bar--top');
 const midBar2 = document.querySelector('#menu2 .menu__bar--middle');
@@ -30,9 +28,6 @@ menu2.addEventListener('click',()=>{
 			midBar2.classList.add('menu__transition2--middle-end');
 			botBar2.classList.add('menu__transition2--bottom-end');
 		},300);
-		
-		menu2state = true;
-		
 	} else {
 			topBar2.classList.remove('menu__transition2--top-end');
 			midBar2.classList.remove('menu__transition2--middle-end');
@@ -42,25 +37,21 @@ menu2.addEventListener('click',()=>{
 				topBar2.classList.remove('menu__transition2--top-start');
 				botBar2.classList.remove('menu__transition2--bottom-start');
 		},300);
-		
-		menu2state = false;
 	}
-
+menu2state = !menu2state;
 });
 
 
 
-
+/*Menu Three Javascript Toggle*/
 const menu3 = document.querySelector('#menu3');
 const topBar3 = document.querySelector('#menu3 .menu__bar--top');
 const midBar3 = document.querySelector('#menu3 .menu__bar--middle');
 const botBar3 = document.querySelector('#menu3 .menu__bar--bottom');
 
-let state = false;
+let menu3state = false;
 
 menu3.addEventListener('click',()=>{
-	
-
 	if (!state){
 		topBar3.classList.add('menu__transition3-top-start');
 		midBar3.classList.add('menu__transition3-middle');
@@ -70,11 +61,7 @@ menu3.addEventListener('click',()=>{
 			topBar3.classList.add('menu__transition3-top-end');
 			botBar3.classList.add('menu__transition3-bottom-end');
 		},300);
-		
-		state = true;
-		
 	} else {
-		
 		topBar3.classList.remove('menu__transition3-top-end');
 		botBar3.classList.remove('menu__transition3-bottom-end');
 		
@@ -83,8 +70,7 @@ menu3.addEventListener('click',()=>{
 			midBar3.classList.remove('menu__transition3-middle');
 			botBar3.classList.remove('menu__transition3-bottom-start');
 			},300);
-			
-		state = false;
 	}
+menu3state = !menu3state;
 });
 
