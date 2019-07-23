@@ -9,21 +9,53 @@ menu1.addEventListener('click',()=>{
 	botBar1.classList.toggle('menu__bar--rotateRight');
 });
 
+
+
+
+
+
 const menu2 = document.querySelector('#menu2');
 const topBar2 = document.querySelector('#menu2 .menu__bar--top');
 const midBar2 = document.querySelector('#menu2 .menu__bar--middle');
 const botBar2 = document.querySelector('#menu2 .menu__bar--bottom');
+let menu2state = false;
 
 menu2.addEventListener('click',()=>{
-	topBar2.classList.toggle('menu__transition2--top');
-	midBar2.classList.toggle('menu__transition2--middle');
-	botBar2.classList.toggle('menu__transition2--bottom');
+	if(!menu2state){
+		topBar2.classList.add('menu__transition2--top-start');
+		botBar2.classList.add('menu__transition2--bottom-start');
+		
+		setTimeout(function(){
+			topBar2.classList.add('menu__transition2--top-end');
+			midBar2.classList.add('menu__transition2--middle-end');
+			botBar2.classList.add('menu__transition2--bottom-end');
+		},300);
+		
+		menu2state = true;
+		
+	} else {
+			topBar2.classList.remove('menu__transition2--top-end');
+			midBar2.classList.remove('menu__transition2--middle-end');
+			botBar2.classList.remove('menu__transition2--bottom-end');
+			
+			setTimeout(function(){
+				topBar2.classList.remove('menu__transition2--top-start');
+				botBar2.classList.remove('menu__transition2--bottom-start');
+		},300);
+		
+		menu2state = false;
+	}
+
 });
+
+
+
 
 const menu3 = document.querySelector('#menu3');
 const topBar3 = document.querySelector('#menu3 .menu__bar--top');
 const midBar3 = document.querySelector('#menu3 .menu__bar--middle');
 const botBar3 = document.querySelector('#menu3 .menu__bar--bottom');
+
 let state = false;
 
 menu3.addEventListener('click',()=>{
@@ -55,3 +87,4 @@ menu3.addEventListener('click',()=>{
 		state = false;
 	}
 });
+
