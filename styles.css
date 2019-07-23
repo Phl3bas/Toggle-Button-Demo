@@ -65,7 +65,7 @@
 
 .menu__bar2 {
 	background-color: #293462;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.15s ease-in-out;
 }
 
 .menu__bar2.menu__bar--top {
@@ -100,26 +100,38 @@
 
 /*transitions*/
 
-.menu__transition2--top{
+
+/*menu 2 transitions*/
+
+.menu__transition2--top-start{
+	transform: scaleX(0.4);
+	border-radius: 3px;
+}
+.menu__transition2--bottom-start{
+	transform: scaleX(0.4);
+	border-radius: 3px;
+}
+
+.menu__transition2--top-end{
 	transform:rotate(-46deg) translate(-4.5px,-7px) scalex(0.4);
-	border-radius:5px;
-	
 }
-
-.menu__transition2--middle{
-		transform:rotate(45deg) scalex(0.9);
-		border-radius:3px;
-		z-index: 2;
-		background-color: #f76262;
+.menu__transition2--middle-end{
+	transform:rotate(45deg) scalex(0.9);
+	border-radius:3px;
+	z-index: 2;
+	background-color: #f76262;
 }
-
-.menu__transition2--bottom{
+.menu__transition2--bottom-end{
 	transform:rotate(-47deg) translate(4.5px,7px) scalex(0.4);
-	border-radius:5px;
 	background-color: #293462 !important;
 }
 
 
+
+
+
+
+/*menu 3 transitions*/
 
 .menu__transition3-top-start {
 	transform: translateY(calc(7px + 4.5px));
