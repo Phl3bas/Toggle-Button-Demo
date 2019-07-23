@@ -52,7 +52,7 @@ const botBar3 = document.querySelector('#menu3 .menu__bar--bottom');
 let menu3state = false;
 
 menu3.addEventListener('click',()=>{
-	if (!state){
+	if (!menu3state){
 		topBar3.classList.add('menu__transition3-top-start');
 		midBar3.classList.add('menu__transition3-middle');
 		botBar3.classList.add('menu__transition3-bottom-start');
