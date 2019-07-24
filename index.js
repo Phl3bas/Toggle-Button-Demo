@@ -1,14 +1,26 @@
+images = [
+	"./images/fjord1.jpg",
+	"./images/fjord2.jpg",
+	"./images/fjord3.jpg"
+];
+const body = document.querySelector('body');
+
+
+
 
 /*Menu One Javascript Toggle*/
 const menu1 = document.querySelector('#menu1');
 const topBar1 = document.querySelector('#menu1 .menu__bar--top');
 const midBar1 = document.querySelector('#menu1 .menu__bar--middle');
 const botBar1 = document.querySelector('#menu1 .menu__bar--bottom');
-
+let menu1state = false;
 menu1.addEventListener('click',()=>{
-	topBar1.classList.toggle('menu__bar--rotateLeft');
-	midBar1.classList.toggle('menu__bar--hide');
-	botBar1.classList.toggle('menu__bar--rotateRight');
+	topBar1.classList.toggle('menu__transition1--top');
+	midBar1.classList.toggle('menu__transition1--middle');
+	botBar1.classList.toggle('menu__transition1--bottom');
+	
+	body.style.backgroundImage = `url(${images[0]})`;
+	menu1state = !menu1state;;
 });
 
 /*Menu Two Javascript Toggle*/
@@ -39,6 +51,7 @@ menu2.addEventListener('click',()=>{
 		},300);
 	}
 menu2state = !menu2state;
+	body.style.backgroundImage = `url(${images[1]})`;
 });
 
 
@@ -72,5 +85,5 @@ menu3.addEventListener('click',()=>{
 			},300);
 	}
 menu3state = !menu3state;
+body.style.backgroundImage = `url(${images[2]})`;
 });
-
