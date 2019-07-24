@@ -2,11 +2,13 @@ images = [
 	"./images/fjord1.jpg",
 	"./images/fjord2.jpg",
 	"./images/fjord3.jpg"
+	
 ];
-const body = document.querySelector('body');
+const bodyEl = document.querySelector('body');
 
-
-
+if (!menu1state && !menu2state && !menu3state){
+	bodyEl.style.backgroundImage = "url(./images/white.jpg)";
+}
 
 /*Menu One Javascript Toggle*/
 const menu1 = document.querySelector('#menu1');
