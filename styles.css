@@ -15,7 +15,7 @@ body{
   max-width: 100%;
   object-fit: cover;
   opacity: 1;
-  filter: blur(2px) grayscale(50%);
+  filter: blur(1.5px) grayscale(50%);
   transition: opacity 1s ease-in-out;
 }
 
